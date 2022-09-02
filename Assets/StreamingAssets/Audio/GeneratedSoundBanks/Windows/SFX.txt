@@ -1,0 +1,44 @@
+Event	ID	Name			Wwise Object Path	Notes
+	794457826	Play_Acceleration			\Default Work Unit\Play_Acceleration	
+	3178709332	Stop_Acceleration			\Default Work Unit\Stop_Acceleration	
+	3187507146	Play_TEST			\Default Work Unit\Play_TEST	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3943412870	CarSpeed			\Default Work Unit\CarSpeed	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	830763178	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	111890294	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A4_03\Wwise Tone Generator	
+	131206568	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\F6_01\Wwise Tone Generator	
+	144247732	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\D1_02\Wwise Tone Generator	
+	206493441	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\A5_03\Wwise Tone Generator	
+	218051738	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\A5_01\Wwise Tone Generator	
+	227899900	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\F6_02\Wwise Tone Generator	
+	286346806	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\TEST\TEST_TONE\Wwise Synth One	
+	324823258	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A3_03\Wwise Tone Generator	
+	355720321	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D6_01\Wwise Tone Generator	
+	372520259	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D3_02\Wwise Tone Generator	
+	392434533	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\D1_01\Wwise Tone Generator	
+	408860819	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\D2_02\Wwise Tone Generator	
+	482976788	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D3_03\Wwise Tone Generator	
+	500348045	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D5_01\Wwise Tone Generator	
+	509810699	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D4_02\Wwise Tone Generator	
+	522050183	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\F6_03\Wwise Tone Generator	
+	529075526	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\A2_01\Wwise Tone Generator	
+	540870902	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D4_01\Wwise Tone Generator	
+	606479983	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\A5_02\Wwise Tone Generator	
+	613599768	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A4_02\Wwise Tone Generator	
+	709715547	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D6_02\Wwise Tone Generator	
+	757992199	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D3_01\Wwise Tone Generator	
+	842037415	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D5_03\Wwise Tone Generator	
+	859260373	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\D4_03\Wwise Tone Generator	
+	880460825	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D6_03\Wwise Tone Generator	
+	900481831	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\A2_02\Wwise Tone Generator	
+	934545159	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A4_01\Wwise Tone Generator	
+	948824432	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\5-6\D5_02\Wwise Tone Generator	
+	965740216	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A3_01\Wwise Tone Generator	
+	998095508	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\D2_01\Wwise Tone Generator	
+	1056392937	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\DeepNote\DeepNote\3-4\A3_02\Wwise Tone Generator	
+

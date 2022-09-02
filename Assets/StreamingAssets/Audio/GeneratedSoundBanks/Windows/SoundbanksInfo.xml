@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\user\Documents\WwiseProjects\DeliveryDriver\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\user\Documents\WwiseProjects\DeliveryDriver\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\user\Documents\WwiseProjects\DeliveryDriver\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\user\Documents\WwiseProjects\DeliveryDriver\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX" Hash="2368698305">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="794457826" Name="Play_Acceleration" ObjectPath="\Events\Default Work Unit\Play_Acceleration" DurationType="Infinite"/>
+				<Event Id="3187507146" Name="Play_TEST" ObjectPath="\Events\Default Work Unit\Play_TEST" DurationType="Unknown"/>
+				<Event Id="3178709332" Name="Stop_Acceleration" ObjectPath="\Events\Default Work Unit\Stop_Acceleration" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3943412870" Name="CarSpeed" ObjectPath="\Game Parameters\Default Work Unit\CarSpeed"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1143903567">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
