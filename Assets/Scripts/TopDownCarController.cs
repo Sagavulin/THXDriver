@@ -11,29 +11,17 @@ public class TopDownCarController : MonoBehaviour
 
     private float accelerationInput = 0;
     private float steeringInput = 0;
-
     private float rotationAngle = 0;
-
     private float velocityVsUp = 0;
-
     private Rigidbody2D carRigidBody;
 
-    private void Awake()
+    void Awake()
     {
         carRigidBody = GetComponent<Rigidbody2D>();
     }
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
-    private void FixedUpdate()
+    // FixedUpdate is used because use of Rigidbody; keeps better sync with physics engine
+	void FixedUpdate()
     {
         ApplyEngineForce();
 
@@ -42,7 +30,7 @@ public class TopDownCarController : MonoBehaviour
         ApplySteeringForce();
     }
 
-    private void ApplyEngineForce()
+    void ApplyEngineForce()
     {
         velocityVsUp = Vector2.Dot(transform.up, carRigidBody.velocity);
 
@@ -64,7 +52,7 @@ public class TopDownCarController : MonoBehaviour
         carRigidBody.AddForce(engineForceVector, ForceMode2D.Force);
     }
 
-    private void ApplySteeringForce()
+    void ApplySteeringForce()
     {
         float minSpeedBeforeAllowTurningFactor = (carRigidBody.velocity.magnitude / 8);
         minSpeedBeforeAllowTurningFactor = Mathf.Clamp01(minSpeedBeforeAllowTurningFactor);
@@ -74,7 +62,7 @@ public class TopDownCarController : MonoBehaviour
         carRigidBody.MoveRotation(rotationAngle);
     }
 
-    private void KillOrthogonalVelocity()
+    void KillOrthogonalVelocity()
     {
         Vector2 forwardVelocity = transform.up * Vector2.Dot(carRigidBody.velocity, transform.up);
         Vector2 rightVelocity = transform.right * Vector2.Dot(carRigidBody.velocity, transform.right);
@@ -86,7 +74,8 @@ public class TopDownCarController : MonoBehaviour
     {
         return Vector2.Dot(transform.right, carRigidBody.velocity);
     }
-    public bool IsTireScreeching (out float lateralVelocity, out bool isBraking)
+    
+	public bool IsTireScreeching (out float lateralVelocity, out bool isBraking)
     {
         lateralVelocity = GetLateralVelocity();
         isBraking = false;

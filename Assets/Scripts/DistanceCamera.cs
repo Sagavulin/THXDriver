@@ -15,13 +15,13 @@ public class DistanceCamera : MonoBehaviour
     public float cameraStartMoveX;
     public float cameraStartMoveY;
 
-    private void Awake()
+    void Awake()
     {
         startingSize = cameraDistance.orthographicSize;
         endSize = startingSize * 4;
     }
 
-    private void Update()
+    void Update()
     {
         if (cameraMove)
         {
@@ -30,7 +30,7 @@ public class DistanceCamera : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Car")
         {

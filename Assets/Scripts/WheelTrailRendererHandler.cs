@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class WheelTrailRendererHandler : MonoBehaviour
 {
-    TopDownCarController topDownCarController;
+    // making drifting marks
+	TopDownCarController topDownCarController;
     TrailRenderer trailRenderer;
 
-    private void Awake()
+    void Awake()
     {
         topDownCarController = GetComponentInParent<TopDownCarController>();
 
         trailRenderer = GetComponentInParent<TrailRenderer>();
 
         trailRenderer.emitting = false;
-    }
-
-    void Start()
-    {
-        
     }
 
     void Update()

@@ -6,9 +6,9 @@ public class CarInputHandler : MonoBehaviour
 {
     TopDownCarController topDownCarController;
 
-    private void Awake()
+    void Awake()
     {
-        topDownCarController = GetComponent<TopDownCarController>();
+        topDownCarController = GetComponent<TopDownCarController>(); // making reference
     }
 
     // Update is called once per frame
