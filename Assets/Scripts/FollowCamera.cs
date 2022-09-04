@@ -14,7 +14,8 @@ public class FollowCamera : MonoBehaviour
     private float transformY;
     private float t = 0;
 
-    // LateUpdate() is called after Update() and works better with follow camera as it tracks movement that might have happened in Update()
+    // LateUpdate() is called after Update() and works better with follow camera
+	// as it tracks movement that might have happened in Update()
 	void LateUpdate()
     {
         if (distanceCamera.cameraMove == false)
