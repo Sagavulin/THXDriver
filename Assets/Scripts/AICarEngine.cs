@@ -8,10 +8,9 @@ public class AICarEngine : MonoBehaviour
     public float maxSteerAngle = 45f;
     public WheelCollider wheelFL;
     public WheelCollider wheelFR;
-
-
+    
     private List<Transform> nodes;
-
+    
     private int currentNode = 0;
 
     void Start()
@@ -33,7 +32,7 @@ public class AICarEngine : MonoBehaviour
 
     void ApplySteer() 
     {
-        Vector2 relativeVector = transform.InverseTransformPoint(nodes[currentNode].position);
+        Vector3 relativeVector = transform.InverseTransformPoint(nodes[currentNode].position);
         float newSteer = (relativeVector.x / relativeVector.magnitude) * maxSteerAngle;
         wheelFL.steerAngle = newSteer;
         wheelFR.steerAngle = newSteer;
