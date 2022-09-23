@@ -54,6 +54,7 @@ public class TopDownCarController : MonoBehaviour
 
     void ApplySteeringForce()
     {
+        // limit the car's ability to turn when moving slowly
         float minSpeedBeforeAllowTurningFactor = (carRigidBody.velocity.magnitude / 8);
         minSpeedBeforeAllowTurningFactor = Mathf.Clamp01(minSpeedBeforeAllowTurningFactor);
         
@@ -64,14 +65,17 @@ public class TopDownCarController : MonoBehaviour
 
     void KillOrthogonalVelocity()
     {
+        // Get forward and right velocity of the car
         Vector2 forwardVelocity = transform.up * Vector2.Dot(carRigidBody.velocity, transform.up);
         Vector2 rightVelocity = transform.right * Vector2.Dot(carRigidBody.velocity, transform.right);
 
+        // Kill the orthogonal velocity (side velocity) based on how much the car should drift
         carRigidBody.velocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
     float GetLateralVelocity()
     {
+        // Returns how fast the car is moving
         return Vector2.Dot(transform.right, carRigidBody.velocity);
     }
     
@@ -96,5 +100,15 @@ public class TopDownCarController : MonoBehaviour
     {
         steeringInput = inputVector.x;
         accelerationInput = inputVector.y;
+    }
+
+    public float GetVelocityMagnitude()
+    {
+        return carRigidBody.velocity.magnitude;
+    }
+
+    public float GetVelocityVsUp()
+    {
+        return velocityVsUp;
     }
 }
