@@ -81,7 +81,7 @@ public class CarAIHandler : MonoBehaviour
             {
                 if (currentWayPoint.maxSpeed > 0)
                     maxSpeed = currentWayPoint.maxSpeed;
-                else maxSpeed = 1000;
+                else maxSpeed = 20;
 
                 // if we are close enough then follow to the next waypoint, if there multiple waypoints then pick one at random
                 currentWayPoint = currentWayPoint.nextWayPointNode[Random.Range(0, currentWayPoint.nextWayPointNode.Length)];
@@ -98,7 +98,7 @@ public class CarAIHandler : MonoBehaviour
 
     float TurnTowardTarget()
     {
-        Vector2 vectorToTarget = targetPosition -transform.position;
+        Vector2 vectorToTarget = targetPosition - transform.position;
         vectorToTarget.Normalize();
 
         // Calculate an angle towards the target
@@ -120,7 +120,8 @@ public class CarAIHandler : MonoBehaviour
         if (topDownCarController.GetVelocityMagnitude() > maxSpeed)
             return 0;
 
-        // Apply throttle forward based on how much the car wants to turn. If it's a sharp turn this cause the car to apply less speed forward.
+        // Apply throttle forward based on how much the car wants to turn.
+        // If it's a sharp turn this cause the car to apply less speed forward.
         return 1.05f - Mathf.Abs(inputX) / 1.0f;
     }
 }

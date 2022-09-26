@@ -9,7 +9,7 @@ public class CarSpeed : MonoBehaviour
 
     void Start()
     {
-        //AkSoundEngine.PostEvent("Play_Acceleration", gameObject);
+        AkSoundEngine.PostEvent("Play_carEngine", gameObject);
     }
 
     void Update()
