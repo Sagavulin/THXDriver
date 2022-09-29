@@ -3615,7 +3615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175402501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cb853f652cf50940bf8732610496271, type: 3}
   m_Name: 
@@ -26905,7 +26905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662932772c666934b97ef1ed0635451c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToFollow: {fileID: 175402501}
+  thingToFollow: {fileID: 1852383823}
   thingToFocus: {fileID: 1819284721}
   distanceCamera: {fileID: 1273765758}
 --- !u!114 &1340432560
@@ -36237,6 +36237,29 @@ Transform:
   m_Father: {fileID: 754585823}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1852383823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4741282006524871114, guid: 8e18d5a16e5cf0c43be56420e5ab60b8, type: 3}
+  m_PrefabInstance: {fileID: 4741282005421350050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1852383826 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4741282006524871117, guid: 8e18d5a16e5cf0c43be56420e5ab60b8, type: 3}
+  m_PrefabInstance: {fileID: 4741282005421350050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1852383830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852383823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd914f1c4fd13e47a06e2283deb526f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheCar: {fileID: 1852383826}
 --- !u!1 &1853292245
 GameObject:
   m_ObjectHideFlags: 0
@@ -42854,6 +42877,10 @@ PrefabInstance:
     - target: {fileID: 4741282006524871114, guid: 8e18d5a16e5cf0c43be56420e5ab60b8, type: 3}
       propertyPath: m_Name
       value: PlayerCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741282006524871123, guid: 8e18d5a16e5cf0c43be56420e5ab60b8, type: 3}
+      propertyPath: accelerationFactor
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e18d5a16e5cf0c43be56420e5ab60b8, type: 3}

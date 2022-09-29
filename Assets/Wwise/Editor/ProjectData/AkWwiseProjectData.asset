@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: dc965e3e8fa9004aa47f6f5f5a06ae60
     GuidInternal: 
-    m_lastTime: -8585376448270645286
+    m_lastTime: -8585372206097122599
     List:
     - name: SFX
       guid: a6f53538dc2a0344b1bc8d837698769c
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a6b20d19c53cfd4b897e3fd0e875ce5f
     GuidInternal: 
-    m_lastTime: -8585376457279634963
+    m_lastTime: -8585372206394217990
     List:
     - name: Play_Acceleration
       guid: d7dd9d4cc34fd048b35913ebe50d0135
@@ -429,6 +429,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_carEngine
+      guid: a316a22dc37aa2499fbd559da01ae07a
+      id: 3546973052
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a6b20d19c53cfd4b897e3fd0e875ce5f
+      - ElementName: Stop_carEngine
+        ObjectType: 3
+        guid: a316a22dc37aa2499fbd559da01ae07a
+      Path: Events\Default Work Unit\Stop_carEngine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -441,7 +458,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 71345e123fd7cb40a5452adad67bd9e9
     GuidInternal: 
-    m_lastTime: -8585373941377059641
+    m_lastTime: -8585372197798157147
     List:
     - name: CarSpeed
       guid: 73b94f6d1a563b42848b135d524eac41
@@ -500,7 +517,7 @@ MonoBehaviour:
     m_lastTime: -8585430432234876096
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
