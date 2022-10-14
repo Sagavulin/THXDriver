@@ -8,10 +8,9 @@ public class CarInputHandler : MonoBehaviour
 
     void Awake()
     {
-        topDownCarController = GetComponent<TopDownCarController>();
+        topDownCarController = GetComponent<TopDownCarController>(); // making reference
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 inputVector = Vector2.zero;

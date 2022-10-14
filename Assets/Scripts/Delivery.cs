@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
+<<<<<<< HEAD
     // NOTE: this script isn't currently in use
+=======
+    // NOTE: Isn't currently in use
+>>>>>>> 7f1a2730e4a1d96085c1f85fdc41fa75876c5c0e
 	[SerializeField] Color32 hasPackageColor = new Color32 (1, 1, 1, 1);
     [SerializeField] Color32 noPackageColor = new Color32 (1, 1, 1, 1);
-    
     [SerializeField] float destroyDelay = 0.5f;
     bool hasPackage;
 

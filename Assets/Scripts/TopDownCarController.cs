@@ -17,11 +17,19 @@ public class TopDownCarController : MonoBehaviour
 
     void Awake()
     {
+<<<<<<< HEAD
         carRigidBody = GetComponent<Rigidbody2D>(); // making reference
     }
 
 	// FixedUpdate is used because use of Rigidbody; keeps better sync with physics engine
     void FixedUpdate()
+=======
+        carRigidBody = GetComponent<Rigidbody2D>();
+    }
+
+    // FixedUpdate is used because use of Rigidbody; keeps better sync with physics engine
+	void FixedUpdate()
+>>>>>>> 7f1a2730e4a1d96085c1f85fdc41fa75876c5c0e
     {
         ApplyEngineForce();
 
@@ -54,6 +62,7 @@ public class TopDownCarController : MonoBehaviour
 
     void ApplySteeringForce()
     {
+        // limit the car's ability to turn when moving slowly
         float minSpeedBeforeAllowTurningFactor = (carRigidBody.velocity.magnitude / 8);
         minSpeedBeforeAllowTurningFactor = Mathf.Clamp01(minSpeedBeforeAllowTurningFactor);
         
@@ -64,18 +73,26 @@ public class TopDownCarController : MonoBehaviour
 
     void KillOrthogonalVelocity()
     {
+        // Get forward and right velocity of the car
         Vector2 forwardVelocity = transform.up * Vector2.Dot(carRigidBody.velocity, transform.up);
         Vector2 rightVelocity = transform.right * Vector2.Dot(carRigidBody.velocity, transform.right);
 
+        // Kill the orthogonal velocity (side velocity) based on how much the car should drift
         carRigidBody.velocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
     float GetLateralVelocity()
     {
+        // Returns how fast the car is moving
         return Vector2.Dot(transform.right, carRigidBody.velocity);
     }
+<<<<<<< HEAD
 	
     public bool IsTireScreeching (out float lateralVelocity, out bool isBraking)
+=======
+    
+	public bool IsTireScreeching (out float lateralVelocity, out bool isBraking)
+>>>>>>> 7f1a2730e4a1d96085c1f85fdc41fa75876c5c0e
     {
         lateralVelocity = GetLateralVelocity();
         isBraking = false;
@@ -97,4 +114,17 @@ public class TopDownCarController : MonoBehaviour
         steeringInput = inputVector.x;
         accelerationInput = inputVector.y;
     }
+<<<<<<< HEAD
+=======
+
+    public float GetVelocityMagnitude()
+    {
+        return carRigidBody.velocity.magnitude;
+    }
+
+    public float GetVelocityVsUp()
+    {
+        return velocityVsUp;
+    }
+>>>>>>> 7f1a2730e4a1d96085c1f85fdc41fa75876c5c0e
 }
